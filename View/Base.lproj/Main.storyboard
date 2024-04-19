@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ArdaKaanOzturk_23MY93008_SinavUygulamasi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="UFY-Gp-33S">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="xZY-RH-Kc4">
+                                <rect key="frame" x="25" y="69" width="343" height="729"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skor: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3q-9c-mMR">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="KuM-7v-y3C"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kucuk-prens" translatesAutoresizingMaskIntoConstraints="NO" id="YoJ-vC-hZd">
+                                        <rect key="frame" x="0.0" y="75" width="343" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="RiY-g4-Fsf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Küçük Prens kitabının yazarı Victor Hugo'dur." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJt-Dy-tPR">
+                                        <rect key="frame" x="0.0" y="290" width="343" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="BJp-Gz-eP3">
+                                        <rect key="frame" x="0.0" y="373" width="343" height="172"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tu8-Nx-hwK">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="74.666666666666671"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="DOĞRU"/>
+                                                <connections>
+                                                    <action selector="usersAnswerButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5sL-Ah-kYd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygd-ua-Llu">
+                                                <rect key="frame" x="0.0" y="97.666666666666629" width="343" height="74.333333333333314"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="YANLIŞ"/>
+                                                <connections>
+                                                    <action selector="usersAnswerButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SC2-hd-wKR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="E2V-w5-Jpr">
+                                        <rect key="frame" x="0.0" y="580" width="343" height="8"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="8" id="pxH-8E-EpP"/>
+                                        </constraints>
+                                    </progressView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="koU-bw-6Ec">
+                                        <rect key="frame" x="0.0" y="623" width="343" height="106"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UFY-Gp-33S" secondAttribute="bottom" id="918-cp-wJK"/>
+                            <constraint firstItem="UFY-Gp-33S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L5Z-zm-owa"/>
+                            <constraint firstItem="xZY-RH-Kc4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="M2z-Gt-oRW"/>
+                            <constraint firstItem="xZY-RH-Kc4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="VfK-y4-1IK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xZY-RH-Kc4" secondAttribute="bottom" constant="20" id="dJD-Ui-Uz0"/>
+                            <constraint firstAttribute="trailing" secondItem="UFY-Gp-33S" secondAttribute="trailing" id="gA2-Og-C4x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xZY-RH-Kc4" secondAttribute="trailing" constant="25" id="qEr-jN-sYY"/>
+                            <constraint firstItem="UFY-Gp-33S" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="t0X-1I-DWd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerButton2" destination="Tu8-Nx-hwK" id="hHn-Nd-dJD"/>
+                        <outlet property="answerButton3" destination="ygd-ua-Llu" id="dey-lD-gzB"/>
+                        <outlet property="imageQuestion" destination="YoJ-vC-hZd" id="8k8-VN-fXM"/>
+                        <outlet property="progressQuiz" destination="E2V-w5-Jpr" id="GNm-q9-A0d"/>
+                        <outlet property="scoreLabel" destination="A3q-9c-mMR" id="Mb1-bR-xyW"/>
+                        <outlet property="textQuestion" destination="OJt-Dy-tPR" id="JTd-BC-rpD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-839" y="-47"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="168" height="299"/>
+        <image name="kucuk-prens" width="300" height="168"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
